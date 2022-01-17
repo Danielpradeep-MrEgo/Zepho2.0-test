@@ -1,0 +1,7 @@
+{
+  "name": "Zepho2.0",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
