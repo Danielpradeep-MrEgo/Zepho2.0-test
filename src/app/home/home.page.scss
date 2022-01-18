@@ -1,27 +1,97 @@
-#container {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 
+.center {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
   position: absolute;
-  left: 0;
-  right: 0;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.center_animate {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+  .letter {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Fredericka+the+Great";
+    // color: #24a19c;
+    // color: #96CEB4;
+    color: #3e8e7e;
+  }
+}
+
+.center_animate_count {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+  .letter {
+    font-size: 30px;
+    font-weight: bold;
+    // color: #22577E;
+    color: #66806a;
+  }
+}
+
+.center__select {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  right: 52%;
+  transform: translate(50%, -50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.center__select-button {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  position: absolute;
+  top: 65%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.button {
+  border-radius: 60px !important;
+  background-color: #1c6dd0 !important;
+  width: 120px;
 }
 
-#container a {
-  text-decoration: none;
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.spring {
+  position: absolute;
+  right: 70%;
 }

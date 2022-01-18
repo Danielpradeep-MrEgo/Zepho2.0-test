@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" align="center">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <!-- <ion-title>Language</ion-title> -->
+    <ion-title>{{"LANGUAGE.title" | translate}}</ion-title>
+    <!-- <ion-title
+      >{{!selectedLanguage ? "Language" : "LANGUAGE.title" |
+      translate}}</ion-title
+    > -->
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="animate center_animate">
+    <span class="letter">Z</span>
+    <span class="letter">E</span>
+    <span class="letter">P</span>
+    <span class="letter">H</span>
+    <span class="letter">O</span>
   </div>
+
+  <div class="animate center_animate_count">
+    <div class="letter" #numberflip></div>
+    <span class="letter">.</span>
+    <span class="letter">0</span>
+  </div>
+  <ion-text align="center" class="center"
+    >{{"LANGUAGE.select_option" | translate}}</ion-text
+  >
+  <!-- <ion-text align="center" class="center"
+    >{{!selectedLanguage ? "Select Language":"LANGUAGE.select_option" |
+    translate}}</ion-text
+  > -->
+  <ion-select
+    class="center__select"
+    [interfaceOptions]="customPopoverOptions"
+    interface="popover"
+    placeholder="Select Language"
+    (ionChange)="SelectLanguage($event);"
+  >
+    <ion-select-option value="English">English</ion-select-option>
+    <ion-select-option value="Hindi">Hindi</ion-select-option>
+    <ion-select-option value="Tamil">Tamil</ion-select-option>
+  </ion-select>
+
+  <section class="center__select-button">
+    <ion-button
+      size="large"
+      color="none"
+      class="button"
+      shape="round"
+      (click)="FinalLanguage()"
+    >
+      <ion-icon name="arrow-forward-outline" class="spring el"></ion-icon>
+    </ion-button>
+  </section>
 </ion-content>

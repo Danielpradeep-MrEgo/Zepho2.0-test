@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from './services/language_service/language.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private languageService: LanguageService) {
+    this.initilizeApp();
+  }
+
+  initilizeApp() {
+    this.languageService.setInitialAppLanguage();
+  }
 }
